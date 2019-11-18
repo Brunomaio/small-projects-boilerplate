@@ -1,0 +1,48 @@
+* {
+  /*border: red 0.1px solid; */
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+}
+
+body {
+	background-image: url(./bgimage.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#app {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.form {
+	margin-top: 2rem
+}
+
+.app-title {
+	font-weight: 600
+}
+
+.center-content {
+	text-align: center;
+}
+
+.list-container {
+  list-style-type: none;
+  padding: 2rem 10rem;
+}
+
+.list-item {
+	background-color: cyan;
+	margin-top: 3px;
+	padding: .5rem;
+}
+
+.completed {
+	text-decoration: line-through;
+	background-color: tomato
+}
+
+.spans-all-columns {
+	grid-column: 1 / -1
+}

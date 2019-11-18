@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Just another good ol' todo list</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400i&display=swap" rel="stylesheet">
+    <link rel="preload" href="./styles.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  </head>
+
+  <body>
+    <div id="app">
+      <h1 class="app-title center-content spans-all-columns">TODO list... yay</h1>
+      <form class="form spans-all-columns center-content">
+        <input type="text" class="input-field"/>
+        <button class="form-submit"> Add item </button>
+      </form>
+      <ul class="list-container" id="todolist">
+        <h2 class="center-content"> TO DO </h2>
+        <!-- list items rendered by JS -->
+      </ul>
+      <ul class="list-container" id="completedlist">
+        <h2 class="center-content"> DONE! </h2>
+        <!-- list items rendered by JS -->
+      </ul>
+    </div>
+    <script src="./index.js"></script>
+  </body>
+</html>
